@@ -35,10 +35,14 @@ namespace ShootingDice
             // OneHigherPlayer creation. (We get and set a name)
             OneHigherPlayer upper = new OneHigherPlayer();
             upper.Name = "Auska";
+
+            // Creation of the HumanPlayer
+            HumanPlayer hunam = new HumanPlayer();
+            hunam.Name = "K-9";
             
             // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smacks, upper
+                player1, player2, player3, large, smacks, upper, hunam
             };
 
             PlayMany(players);

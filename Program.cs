@@ -28,13 +28,17 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             // Creating a smacktalkingplayer
-            SmackTalkingPlayer Smacks = new SmackTalkingPlayer();
-            Smacks.Name = "Gobi";
-            Smacks.Taunt = "Eat my shorts!";
+            SmackTalkingPlayer smacks = new SmackTalkingPlayer();
+            smacks.Name = "Gobi";
+            smacks.Taunt = "Eat my shorts!";
 
+            // OneHigherPlayer creation. (We get and set a name)
+            OneHigherPlayer upper = new OneHigherPlayer();
+            upper.Name = "Auska";
+            
             // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, Smacks
+                player1, player2, player3, large, smacks, upper
             };
 
             PlayMany(players);

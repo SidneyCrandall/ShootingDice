@@ -44,9 +44,13 @@ namespace ShootingDice
             CreativeSmackTalkingPlayer caddy = new CreativeSmackTalkingPlayer();
             caddy.Name = "Inouske";
 
+            // Creating a name for the SoreLoser
+            SoreLoserPlayer cryBaby = new SoreLoserPlayer();
+            cryBaby.Name = "Ryu";
+
             // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smacks, upper, hunam, caddy
+                player1, player2, player3, large, smacks, upper, hunam, caddy, cryBaby
             };
 
             PlayMany(players);

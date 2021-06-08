@@ -39,10 +39,14 @@ namespace ShootingDice
             // Creation of the HumanPlayer
             HumanPlayer hunam = new HumanPlayer();
             hunam.Name = "K-9";
-            
+
+            // Creating the CreativeSmackTalkingPLayer, who is different than the SmackTalking
+            CreativeSmackTalkingPlayer caddy = new CreativeSmackTalkingPlayer();
+            caddy.Name = "Inouske";
+
             // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smacks, upper, hunam
+                player1, player2, player3, large, smacks, upper, hunam, caddy
             };
 
             PlayMany(players);

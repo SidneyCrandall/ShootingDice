@@ -16,7 +16,7 @@ namespace ShootingDice
             // Writing what each player will roll after the above method was used.
             Console.WriteLine($"{Name} rolls a {cryBabyRoll}!");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}!");
-
+            
             // An exception to be thrown. 
             if (cryBabyRoll > otherRoll)
             {

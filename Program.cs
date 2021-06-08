@@ -8,32 +8,33 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
+            // Initial code with normal players. 
             Player player1 = new Player();
             player1.Name = "Bob";
 
             Player player2 = new Player();
             player2.Name = "Sue";
-
             player2.Play(player1);
-
             Console.WriteLine("-------------------");
 
             Player player3 = new Player();
             player3.Name = "Wilma";
-
-            player3.Play(player2);
-
+            player3.Play(player3);
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
-
             player1.Play(large);
-
             Console.WriteLine("-------------------");
 
+            // Creating a smacktalkingplayer
+            SmackTalkingPlayer Smacks = new SmackTalkingPlayer();
+            Smacks.Name = "Gobi";
+            Smacks.Taunt = "Eat my shorts!";
+
+            // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, Smacks
             };
 
             PlayMany(players);
@@ -62,7 +63,7 @@ namespace ShootingDice
             {
                 Console.WriteLine("-------------------");
 
-                // Make adjacent players play noe another
+                // Make adjacent players play one another
                 Player player1 = shuffledPlayers[i];
                 Player player2 = shuffledPlayers[i + 1];
                 player1.Play(player2);

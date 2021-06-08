@@ -52,9 +52,13 @@ namespace ShootingDice
             UpperHalfPlayer highRoll = new UpperHalfPlayer();
             highRoll.Name = "Mugen";
 
+            // Creating the SoreLoserUpperHalfPlayer
+            SoreLoserUpperHalfPlayer sore = new SoreLoserUpperHalfPlayer();
+            sore.Name = "Aizawa";
+
             // Adding to list of Players
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smacks, upper, hunam, caddy, cryBaby, highRoll
+                player1, player2, player3, large, smacks, upper, hunam, caddy, cryBaby, highRoll, sore
             };
 
             PlayMany(players);
